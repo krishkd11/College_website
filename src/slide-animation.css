@@ -1,0 +1,13 @@
+/* src/slide-animation.css */
+.slide-animation-container {
+  position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: -1;
+}
+.campus-image {
+  position: absolute; width: 300px; height: 200px; opacity: 0;
+  border-radius: 20px; background: #ccc;
+}
+.vvcoe-slide { animation: slide1 8s infinite; }
+.vv-slide { animation: slide2 8s 2s infinite; }
+@keyframes slide1 { 0%{left:-300px;opacity:0;} 30%{left:40vw;opacity:1;} 60%{left:80vw;opacity:0.8;} 100%{right:-300px;opacity:0;} }
+@keyframes slide2 { 0%{left:-300px;top:50vh;opacity:0;} 30%{left:50vw;top:50vh;opacity:1;} 60%{right:-300px;top:50vh;opacity:0;} }
+.slide-overlay { position: absolute; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(0,0,0,0.3); }
